@@ -1,0 +1,9 @@
+.container-flex{
+    background-color: #333;
+    display: flex;
+    display: inline-flex;
+}
+
+.items{
+    background-color: #666;
+}
