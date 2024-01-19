@@ -7,3 +7,33 @@
 .items{
     background-color: #666;
 }
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+.container-fdirection{
+    background-color: #333;
+    display: flex;
+    flex-direction: row;/*row-reverse, column, column-reverse*/
+}
+
+.container-fwrap{
+    background-color: #333;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;/*nowrap, wrap-reverse*/
+    /*flex-flow:colum wrap   -- es un shorthand de
+    flexdirection y flexwrap*/
+}
+.items-fwrap{
+    border: medium solid #999;
+    background-color: #666;
+    width: 20%;
+}
