@@ -63,3 +63,49 @@ html {
 .color-font-button{
     color: green;
 }
+
+/*--CROSS AXIS - DOM CREATE ELEMENT--*/
+.flex-regla{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-regla>img{
+    height: 50vh;
+    width: 100%;
+}
+fieldset{
+    margin-bottom: 1rem;
+}
+/*Align items*/
+.container-align-items{
+    margin-bottom: 2rem;
+    height: 30vh;
+    background-color: #333;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.items-align{
+    border: medium solid #999;
+    background-color: #b65252;
+    /*width: 20%;*/
+}
+
+/*Align Content*/
+.container-align-content{
+    margin-bottom: 2rem;
+    height: 30vh;
+    background-color: #333;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: normal;
+    align-content:normal;
+}
+.items-align-content{
+    border: medium solid rgb(221, 221, 77);
+    background-color: rgb(84, 169, 202);
+    width: 20%;
+}
