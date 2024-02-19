@@ -153,8 +153,67 @@
         <article class="items-align-content">Flex Item 18</article>
         <article class="items-align-content">Flex Item 19</article>
     </section>
+
+
+
+    <!--Usar desde aqui-->
+    <br><br><br><br><br>
+    <h2>Flex Grow</h2>
+    <fieldset class="field-grow">
+        <legend>Select a factor of grow item:</legend>
+        <div class="get-number-grow">
+            <label for="f1-grow">Item #1</label>
+            <input type="number" id="f1-grow" name="f1-grow" min="0" max="5" value="0" required/>  
+        </div>
+        <div class="get-number-grow">
+            <label for="f2-grow">Item #2</label>
+            <input type="number" id="f2-grow" name="f2-grow" min="0" max="5" value="0" required/>
+        </div>
+        <div class="get-number-grow">
+            <label for="f3-grow">Item #3</label>
+            <input type="number" id="f3-grow" name="f3-grow" min="0" max="5" value="0" required/>
+        </div>
+        
+        <button id="btn-grow" class="justify-buttons get-number2">Aceptar</button>      
+    </fieldset>
+    <p id="Grow-Description"></p>
+
+    <section class="container-flex-grow">
+        <article class="items-flex-grow">Flex Item 1</article>
+        <article class="items-flex-grow">Flex Item 2</article>
+        <article class="items-flex-grow">Flex Item 3</article>
+    </section>
+    <!-- FLEX-SHRINK  AND FLEX-BASIS-->
+    <br><br><br><br><br>
+    <h2>Flex Shrink</h2>
+    <fieldset class="field-grow">
+        <legend>Select a switch for every Shrink item:</legend>
+        <div class="get-number-shrink">
+            <label for="f1-shrink">Item #1</label>
+            <input type="number" id="f1-shrink" name="f1-shrink" min="0" max="5" value="0" required/>  
+        </div>
+        <div class="get-number-shrink">
+            <label for="f2-shrink">Item #2</label>
+            <input type="number" id="f2-shrink" name="f2-shrink" min="0" max="5" value="0" required/>
+        </div>
+        <div class="get-number-shrink">
+            <label for="f3-shrink">Item #3</label>
+            <input type="number" id="f3-shrink" name="f3-shrink" min="0" max="5" value="0" required/>
+        </div>
+        
+        <button id="btn-shrink" class="justify-buttons get-number2">Aceptar</button>      
+    </fieldset>
+    <p id="Shrink-Description"></p>
+
+    <section class="container-flex-shrink">
+        <article class="items-flex-shrink">Flex Item 1 diego armando montero sanchez</article>
+        <article class="items-flex-shrink">Flex Item 2 diego armando montero sanchez</article>
+        <article class="items-flex-shrink">Flex Item 3 diego armando montero sanchez</article>
+    </section>
+
     <script src="js/script.js"></script>
     <script src="js/crossAxis.js"></script>
     <script src="js/alignContent.js"></script>
+    <script src="js/grow.js"></script>
 </body>
 </html>

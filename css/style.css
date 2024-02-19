@@ -109,3 +109,83 @@ fieldset{
     background-color: rgb(84, 169, 202);
     width: 20%;
 }
+
+/*--- Factor de crecimiento---*/
+.field-grow{
+    background-color: rgb(194, 194, 194);
+    margin-bottom: 2rem;
+    /*height: 10vh;*/
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.get-number2, .get-number-grow, .get-number-shrink{
+    margin-inline-start: 1rem;
+}
+
+.container-flex-grow{
+    margin-bottom: 2rem;
+    height: 30vh;
+    width: 1000px;
+    background-color: #333;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+}
+
+.items-flex-grow{
+    border: medium solid beige;
+    background-color: rgb(48, 77, 119);
+    /*width: 20%;*/
+    /*flex-grow: 0; VALOR POR DEFECTO*/
+    width: 100px;
+    flex-grow: 0;
+}
+/* .items-flex-grow:nth-child(2){
+    flex-grow: 0;
+} */
+input[type="number"]:invalid{
+    border: thin solid red;
+}
+/* -- SHRINK --*/
+.container-flex-shrink{
+    margin-bottom: 2rem;
+    height: 30vh;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+}
+
+.items-flex-shrink{
+    border: medium solid beige;
+    background-color: rgb(48, 77, 119);
+    /*width: 20%;*/
+    /*flex-shrink: 1; VALOR POR DEFECTO
+    q si se reduce y 0 no se reduce*/
+    /*width: 100px;*/
+    /* flex-shrink: 1; */
+
+    /*--- FLEX BASIS ---
+     Es el tamaño del elemento hijo dentro de la linea de la caja flexbox
+     si la caja flexbox tiene la direccion de fila, flex-basis representa el width
+     si la caja flexbox tiene la direccion de columna, flex-basis representa el height
+     Valor por defecto auto*/
+     flex-basis: auto;
+
+     /*Shorthand de las 3 propiedades factor de crecimiento
+     flex: grow shrink basis EJM:*/
+     /* flex:0 1 100px; */
+
+}
+
+ /*.items-flex-shrink:nth-child(2){
+    flex-shrink: 2;
+}*/
