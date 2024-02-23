@@ -189,3 +189,24 @@ input[type="number"]:invalid{
  /*.items-flex-shrink:nth-child(2){
     flex-shrink: 2;
 }*/
+
+/*--- Orden y Alineamiento ---
+Orden*/
+/*.items-flex-shrink:nth-child(2){
+    order: 0;
+Representa el orden que tedran los elementos hijos en la caja flexbox
+Valor por defecto 0
+se aceptan valores positivos y negativos
+Un valor menor siempre irá antes que un valor mayor
+}*/
+
+/*Self-item*/
+.container-self-item{
+    align-self: stretch;
+}
+.items-flex:nth-child(2){
+    align-self: flex-start;
+}
+/* stretch | flex-start | flex-end | center | baseline 
+Sobreescribe el valor de la propiedad align-items,
+solo para el elemento hijo especificado*/
